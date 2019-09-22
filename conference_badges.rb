@@ -26,4 +26,10 @@ end
 
 def printer
   conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
-  
+  batch_badge_creator(conference_names).each do |names|
+    puts "#{names}"
+  end
+  assign_rooms(conference_names).each do |names|
+    puts "#{names}"
+  end
+end
