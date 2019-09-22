@@ -1,4 +1,4 @@
-conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+#conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 
 def badge_maker (name)
   p "Hello, my name is #{name}."
@@ -25,5 +25,5 @@ def assign_rooms (speakers)
 end
 
 def printer
-
-    
+  conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+  
