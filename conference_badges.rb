@@ -24,12 +24,12 @@ def assign_rooms (speakers)
   return room_assignments
 end
 
-def printer
-  conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
-  batch_badge_creator(conference_names).each do |names|
+def printer(attendees)
+  #conference_names=["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+  batch_badge_creator(attendees).each do |names|
     puts "#{names}"
   end
-  assign_rooms(conference_names).each do |names|
+  assign_rooms(attendees).each do |names|
     puts "#{names}"
   end
 end
